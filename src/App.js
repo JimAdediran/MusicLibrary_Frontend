@@ -3,6 +3,7 @@ import React, {useState, useEffect} from 'react';
 import axios from 'axios';
 import AddSong from './Components/AddSong/AddSong';
 import DisplaySong from './Components/DisplayMusic/DisplayMusic';
+import SearchBar from './Components/SearchBar/SearchBar';
 
 function App() {
 
@@ -20,6 +21,7 @@ async function getAllSongs(){
 
   return (
     <div>
+      <SearchBar songs={songs} setSongs={setSongs}/>
       <DisplaySong songs={songs}  getAllSongs={getAllSongs}/>
       <AddSong getAllSongs={getAllSongs} />
     </div>
