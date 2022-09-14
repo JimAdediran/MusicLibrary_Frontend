@@ -1,4 +1,4 @@
-
+import DeleteButton from "../DeleteButton/DeleteButton";
 
 
 const DisplaySong = (props) =>{
@@ -16,7 +16,7 @@ const DisplaySong = (props) =>{
                         <th>Artist</th>
                         <th>Album</th>
                         <th>Release Date</th>
-                        <th>Genere</th>
+                        <th>Genre</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -28,6 +28,7 @@ const DisplaySong = (props) =>{
                                 <td>{song.album}</td>
                                 <td>{song.release_date}</td>
                                 <td>{song.genre}</td>
+                                <DeleteButton id={song.id} getAllSongs={props.getAllSongs}/>
                             </tr>
                         );
                     })}
