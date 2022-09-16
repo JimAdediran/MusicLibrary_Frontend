@@ -20,11 +20,13 @@ async function getAllSongs(){
 }
 
   return (
-    <div>
-      <SearchBar songs={songs} setSongs={setSongs}/>
-      <DisplaySong songs={songs}  getAllSongs={getAllSongs}/>
-      <AddSong getAllSongs={getAllSongs} />
+    <div className='background'>
+      <div className='header'><h3>Music Library</h3></div>
+      <div className='header'><SearchBar songs={songs} setSongs={setSongs}/></div>
+      <div className='header'><DisplaySong className='header' songs={songs}  getAllSongs={getAllSongs}/></div>
+      <div className='header'><AddSong getAllSongs={getAllSongs} /></div>
     </div>
+  
   );
 }
 

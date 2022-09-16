@@ -12,7 +12,7 @@ const SearchBar = (props) => {
            song.album.toLowerCase().includes(searchTerm.toLowerCase()) ||
            song.release_date.includes(searchTerm) ||
            song.genre.toLowerCase().includes(searchTerm.toLowerCase())){
-            return true;
+            return true; 
            }
            else{
             return false;

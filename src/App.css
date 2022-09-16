@@ -1,3 +1,4 @@
+
 .App {
   text-align: center;
 }
@@ -35,4 +36,21 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.header {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  
+}
+.title {
+  align-items: center;
+}
+.background{
+  background-image: url("./assets/recordplayer.jpg");
+  text-align: center;
+  background-repeat: no-repeat;
+  background-size: auto;
+  
 }
